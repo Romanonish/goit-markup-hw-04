@@ -324,7 +324,7 @@ button:focus {
 .feature-text {
   margin: 0;
 }
-/* оформление иконки */
+/* Оформление иконки */
 .thumb {
   display: flex;
   justify-content: center;
@@ -333,7 +333,6 @@ button:focus {
   margin-bottom: 30px;
   background-color: var(--icon-bkgrnd);
   border-radius: 4px;
-  /* outline: 1px solid red; */
 }
 
 .feature-icon {
@@ -431,7 +430,6 @@ button:focus {
   width: 44px;
   height: 44px;
   color: var(--icon-color);
-  /* outline: 1px solid red; */
 }
 
 .social-icon {
@@ -480,7 +478,8 @@ button:focus {
   padding: 16px 32px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -490,8 +489,6 @@ button:focus {
 }
 
 /* Портфолио */
-
-/* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); */
 
 .works {
   padding-top: 94px;
@@ -588,7 +585,8 @@ button:focus {
   display: inline-block;
 }
 
-.works-link:hover {
+.works-link:hover,
+.works-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -643,7 +641,7 @@ button:focus {
 
 .footer-links-title {
   display: inline-block;
-  margin-top: 12px;
+  margin-top: 12px; /*Костыль, но сделать ничего не могу!!!*/
   margin-bottom: 20px;
   color: var(--white-color);
   font-family: Roboto;
@@ -658,11 +656,9 @@ button:focus {
   background-color: var(--footer-icon-bkgrnd);
 }
 
-.footer-links .social-link:hover {
+.footer-links .social-link:hover,
+.footer-links .social-link:focus {
   background-color: var(--accent-color);
-}
-
-.adress-thumb {
 }
 
 .footer-links {
